@@ -3,7 +3,16 @@ for (let i = 1; i <= 1000; i++) {
     arrayToSearchThrough.push(i);
 }
 
-exports.linearSearch = function(valueToFind, arrayToSearchThrough) {
-
+function linearSearch(valueToFind, arrayToSearchThrough) {
+    let result = []
+    for(let i = 0; i < arrayToSearchThrough.length; i++) {
+        if(arrayToSearchThrough[i] === valueToFind) {
+            result.push(i)
+        }
+    }
+    console.log(result)
 };
+
+linearSearch("n", ["b", "a", "n", "a", "n", "a", "s"])
+
 
